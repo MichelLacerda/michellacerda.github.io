@@ -6,16 +6,43 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Michel Lacerda
+email: michellacerdasilva@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# Highlighter
+# highlighter: pygments
 
-# Build settings
+# Social Media
+twitter_username: michel_lacerda_
+github_username:  MichelLacerda
+
+# Markdown
 markdown: kramdown
+
+# Other settings
+exclude: ['README.md', 'LICENSE']
+
+# i18n and encode
+timezone: America/Sao_Paulo
+encoding: utf-8
+
+# urlpatterns
+permalink: /post/:title
+# baseurl: "/gd"
+url: "http://michellacerda.com.br"
+static: /static/
+# media: /gd/media/
+# post_image: /gd/media/post/images/
+# post_thumb: /gd/media/post/thumbnail/
+# favicon: /gd/media/favicon.png
+
+# Post
+gems: [jekyll-paginate]
+post_total: False
+paginate: 1
+paginate_path: "/posts/:num"
+thumb_width: 390px
+thumb_height: 300px

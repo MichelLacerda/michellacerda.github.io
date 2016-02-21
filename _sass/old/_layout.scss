@@ -246,88 +246,14 @@
     width: 100%;
 }
 
-.content-aside {
-    background: #23272c;
+nav.nav-left {
     width: 25%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    padding: 20px 0;
-    text-align: center;
-    color: $text-color !important;
+    float: left;
+    background-color: #00FF00;
 }
-
-.content-aside .logo {
-    max-width: 70px;
-    margin: 0 auto 30px;
-    display: block;
-}
-
-.content-main {
-    opacity: 0;
-    top: 0;
-    left: 25%;
-    bottom: 0;
-    padding: 20px;
-    position: absolute;
-}
-
 
 article.article-content {
     float: left;
     width: 75%;
     background-color: #FF0000;
-}
-
-/* 
- * Footer
- */
-
-.footer-wrap {
-    text-align: center;
-}
-
-.footer-inner {
-    text-align: center;
-    // min-height: 140px;
-    max-width: 700px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 10px;
-}
-
-i.icon-c {
-    border-radius: 100%;
-    background: $text-color;
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    vertical-align: middle;
-    margin: 0 4px;
-    filter: invert(50%);
-    -webkit-filter: invert(50%);
-    -o-filter: invert(50%);
-}
-
-nav.tags-aside {
-    p {
-        margin: 25px 0 10px 0;
-    }
-
-    .tag {
-        a {
-            padding: 4px;
-            color: #FFF !important;
-            background: #E5891a !important;
-            text-decoration: none;
-            margin: 2px !important;
-            &:hover {
-                color: #FFF !important;
-            }
-            &:visited {
-                color: #FFF !important;
-            }
-        }
-    }
 }

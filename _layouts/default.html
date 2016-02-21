@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
-    {% include header.html %}
+    <div class="content-wrapper" id="content-wrapper">
+      <aside class="content-aside">
+        <a href="/">
+          <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png">
+          Michel Lacerda
+        </a>
+        <nav class="tags-aside">
+          <p>PROCURANDO POR</p>
+          {% assign post = page %}
+          {% include tag.html %}
+          <span class="tag">{{ category_content }}{{ tags_content }}</span>
+        </nav>
+      </aside>
+      <main class="content-main" id="content-main">
+        {{ content }}
+        {% include footer.html %}
+      </main>
+    </div>
+    
+    <!-- {% include header.html %}
 
     <div class="page-content">
       <div class="wrapper">
@@ -13,8 +29,11 @@
       </div>
     </div>
 
-    {% include footer.html %}
-
+    {% include footer.html %} -->
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $(".content-main").delay(500).animate({opacity: 1}, 200);
+      });
+    </script>
   </body>
-
 </html>

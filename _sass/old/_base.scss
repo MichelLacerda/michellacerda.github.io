@@ -14,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    /* font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -22,19 +22,8 @@ body {
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
-    font-kerning: normal; */
-    font: $base-font-weight $base-font-size $base-font-family;
-    background: $background-color;
-    color: $text-color;
-
+    font-kerning: normal;
 }
-
-/* 
-    background: #3D4247;
-    color: #e7e7e7;
-    aside: #23272c
-
- */
 
 
 
@@ -48,20 +37,7 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 8px;
-}
 
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
 
 /**
  * Images
@@ -115,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #E5891a !important;
+    color: $brand-color;
     text-decoration: none;
 
     &:visited {
@@ -154,9 +130,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    // border-left: 4px solid #E5891a;
-    // border-radius: 3px;
-    background-color: #23272c;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
 }
 
 code {
@@ -166,9 +142,7 @@ code {
 pre {
     padding: 8px 12px;
     overflow-x: auto;
-    border: none !important;
-    border-radius: 0 !important;
-    border-left: 4px solid #E5891a !important;
+
     > code {
         border: 0;
         padding-right: 0;
@@ -182,7 +156,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-    /* max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
@@ -195,11 +169,7 @@ pre {
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    } */
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-
+    }
 }
 
 

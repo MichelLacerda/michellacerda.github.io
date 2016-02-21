@@ -1,0 +1,7 @@
+- slug: jekyll
+  name: Jekyll
+  color: red
+
+- slug: google
+  name: Google
+  color: blue
