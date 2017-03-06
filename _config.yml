@@ -46,3 +46,4 @@ paginate: 1
 paginate_path: "/posts/:num"
 thumb_width: 390px
 thumb_height: 300px
+theme: jekyll-theme-minimal
